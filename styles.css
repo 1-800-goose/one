@@ -1,0 +1,122 @@
+@keyframes upthenscale {
+  0% {transform: translateY(250px);}
+  50% {transform: translateY(0);}
+  60% {
+    height: 100px;
+    width: 200px;
+    transform: translateY(0);
+  }
+  100% {
+    height:  60%;
+    width: 100%;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scalethendown {
+  0% {
+    height:  250px;
+    width: 100%;
+    transform: translateY(0);
+  }
+  50% {
+    height: 100px;
+    width: 90px;
+    transform: translateY(0);
+  }
+  60% {transform: translateY(0);}
+  100% {transform: translateY(250px);}
+}
+
+@keyframes waitfade {
+  0%, 50% {opacity: 0;}
+  100% {opacity: 1;}
+}
+
+.letter {
+  display: block;
+  margin: auto auto;
+  max-width: 600px;
+  height: 600px;
+  position: relative;
+  /* overflow: hidden; */
+  bottom: 0;
+}
+
+.letter--open .paper {
+  animation-name: upthenscale;
+  animation-duration: .6s;
+  animation-fill-mode: forwards;
+}
+
+.letter--close .paper {
+  animation-name: scalethendown;
+  animation-duration: .4s;
+  animation-fill-mode: forwards;
+}
+
+.letter--open .paper-content {
+  animation-name: waitfade;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+}
+
+.paper-content {
+  color: #545454;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.paper-content img {
+  width: 900px;
+  /* display: none; */
+  position: absolute;
+}
+
+.paper {
+  display: block;
+  position: relative;
+  height: 50px;
+  width: 90px;
+  background: #fcf8dd;
+  border-radius: 20px;
+  transform: translateY(250px);
+  margin: auto auto;
+  transition: transform 0.3s 0.1s ease;
+  border-radius: 2px;
+}
+
+#closed {
+  display: block;
+  position: relative;
+  margin: auto auto;
+  z-index: 2;
+  cursor: pointer;
+  border-radius: 3px;
+  transition: box-shadow 0.3s ease;
+  transform: translateY(310px);
+}
+
+.envelope-paper {
+  height: 50px;
+  width: 90px;
+  background: #fcf8dd;
+  transform: translateY(0);
+  margin: 0 auto;
+  transition: transform 0.3s 0.1s ease;
+  border-radius: 2px;
+  position: absolute;
+  border: 2px solid transparent;
+}
+
+.letter > img:hover {
+  content: url('img/open.png');
+}
+
+.hidden {
+  display: none !important;
+
+}
