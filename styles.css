@@ -72,7 +72,6 @@
 
 .paper-content img {
   width: 900px;
-  /* display: none; */
   position: absolute;
 }
 
@@ -118,5 +117,4 @@
 
 .hidden {
   display: none !important;
-
 }

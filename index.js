@@ -18,6 +18,7 @@
       } else {
         document.querySelector('.letter').classList.remove('letter--close');
         id("closed").classList.add("hidden");
+        id("image").classList.remove("hidden");
         document.querySelector('.letter').classList.add('letter--open');
       }
     });
