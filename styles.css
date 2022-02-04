@@ -128,6 +128,8 @@
   text-align: center;
   padding: 20px;
   padding-top: 40px;
+  font-style: italic;
+  color: tan;
 }
 
 #container {
@@ -141,6 +143,26 @@ form input {
   height: 40px;
   width: 40px;
   text-align: center;
+  border: double rgb(141, 113, 76);
+  color: rgb(141, 113, 76);
+  font-style: italic;
+}
+
+#next, #link{
+  height: 40px;
+  width: 70px;
+  font-size: 15px;
+  border: none;
+  border-radius: 5px;
+  background-color: #fcf8dd;
+  color: tan;
+  font-style: italic;
+}
+
+#next:hover, #link:hover {
+  background-color: tan;
+  color: #fcf8dd;
+  cursor: pointer;
 }
 
 .hidden {

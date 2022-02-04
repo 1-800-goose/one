@@ -13,7 +13,6 @@
     });
 
     id("closed").addEventListener('click', function(){
-      // console.log("click");
       let music = new Audio("img/music.mp3");
       music.play();
 
@@ -31,15 +30,8 @@
       }
       setTimeout(function(){
         id("next").classList.remove("hidden");
-      }, 600);
+      }, 10000);
     });
-
-    // document.querySelector('.paper-close').addEventListener('click', function(){   document.querySelector('.letter').classList.remove('letter--open');
-    //   document.querySelector('.letter').classList.add('letter--close');
-    //   setTimeout(function(){
-    //     document.querySelector('.letter').classList.remove('letter--close');
-    //   }, 600);
-    // });
   };
 
   function check() {
