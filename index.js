@@ -13,6 +13,8 @@
     });
 
     id("closed").addEventListener('click', function(){
+      console.log(document.getElementsByClassName("paper")[0]);
+      document.getElementsByClassName("paper")[0].classList.remove("hidden");
       let music = new Audio("img/music.mp3");
       music.play();
 
@@ -30,7 +32,7 @@
       }
       setTimeout(function(){
         id("next").classList.remove("hidden");
-      }, 1000);
+      }, 10000);
     });
   };
 
