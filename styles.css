@@ -7,7 +7,7 @@
     transform: translateY(0);
   }
   100% {
-    height:  60%;
+    height: 100%;
     width: 100%;
     transform: translateY(0);
   }
@@ -37,10 +37,11 @@
   display: block;
   margin: auto auto;
   max-width: 600px;
-  height: 600px;
+  height: 400px;
   position: relative;
   /* overflow: hidden; */
   bottom: 0;
+  padding:50px;
 }
 
 .letter--open .paper {
@@ -113,6 +114,33 @@
 
 .letter > img:hover {
   content: url('img/open.png');
+}
+
+#flip:hover #image {
+  transform: rotateY(180deg);
+}
+
+#msgs {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  padding-top: 40px;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+form input {
+  height: 40px;
+  width: 40px;
+  text-align: center;
 }
 
 .hidden {
