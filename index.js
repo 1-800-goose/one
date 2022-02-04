@@ -30,7 +30,7 @@
       }
       setTimeout(function(){
         id("next").classList.remove("hidden");
-      }, 10000);
+      }, 1000);
     });
   };
 
@@ -57,26 +57,32 @@
     id("cryptex").classList.remove("hidden");
 
     setTimeout(function(){
-      id("one").textContent = `This is a cryptex, like in that movie The Da Vinci Code, the movie
-      neither of us watched.`;
+      id("hello").textContent = "hello darling :))";
     }, 1000);
+
     setTimeout(function(){
-      id("two").textContent = `Inside it will tell you where to retrieve your present at 9:00 P.M.
-      tonight.`;
-    }, 4000);
-    setTimeout(function(){
-      id("three").textContent = `The combination is a five-letter code that captures the essence
-      of our third date. :)`;
-    }, 7000);
-    setTimeout(function(){
-      id("four").textContent = `So you'll see your present tonight.`;
-    }, 10000);
-    setTimeout(function(){
-      id("five").textContent = `Unless...You can't crack the code.`;
-    }, 12000);
-    setTimeout(function(){
-      id("six").textContent = `<3`;
-    }, 14500);
+      setTimeout(function(){
+        id("one").textContent = `This is a cryptex, like in that movie The Da Vinci Code, the movie
+        neither of us watched.`;
+      }, 1000);
+      setTimeout(function(){
+        id("two").textContent = `Inside it will tell you where to retrieve your present at 9:00 P.M.
+        tonight.`;
+      }, 4000);
+      setTimeout(function(){
+        id("three").textContent = `The combination is a five-letter code that captures the essence
+        of our third date. :)`;
+      }, 7000);
+      setTimeout(function(){
+        id("four").textContent = `So you'll see your present tonight.`;
+      }, 10000);
+      setTimeout(function(){
+        id("five").textContent = `Unless...You can't crack the code.`;
+      }, 12000);
+      setTimeout(function(){
+        id("six").textContent = `<3`;
+      }, 14500);
+    }, 3000);
   }
 
   function id(idName) {
